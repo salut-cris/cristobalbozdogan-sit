@@ -1,24 +1,25 @@
 :root {
   --bg: #ffffff;
   --header-bg: #ffffff;
-  --ink: #333333;
-  --heading: #3e2723;
-  --heading-2: #5c4033;
-  --muted: #4a4a4a;
+  --ink: #4a2c2a;
+  --heading: #4a2c2a;
+  --heading-2: #8b4513;
+  --muted: #4a2c2a;
   --line: #e8e2de;
   --accent: #ff0000;
-  --btn-bg: #3e2723;
+  --beige: #eadfc8;
+  --blue: #aec6cf;
+  --btn-bg: #4a2c2a;
   --btn-ink: #ffffff;
   --card-bg: #ffffff;
-  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
-  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Times New Roman", Times, Georgia, serif;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--serif);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.6;
@@ -36,19 +37,18 @@ body {
 }
 
 .brand {
-  font-family: var(--serif);
   font-weight: 700;
   letter-spacing: 0.14em;
   text-decoration: none;
-  color: #000000;
-  font-size: 16px;
+  color: #4a2c2a;
+  font-size: 17px;
 }
 
 .nav-links a {
   margin-left: 24px;
   text-decoration: none;
-  color: #000000;
-  font-size: 14px;
+  color: #4a2c2a;
+  font-size: 15px;
 }
 
 .nav-links a:hover { color: var(--accent); }
@@ -72,8 +72,7 @@ body {
 }
 
 .hero h1 {
-  font-family: var(--serif);
-  font-size: 46px;
+  font-size: 48px;
   letter-spacing: 0.08em;
   color: var(--heading);
   margin: 0 0 10px;
@@ -83,12 +82,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   color: var(--heading-2);
-  font-size: 12px;
+  font-size: 13px;
   margin: 0 0 24px;
 }
 
-.hero p.lead { font-size: 18px; color: var(--ink); margin: 0 0 14px; }
-.hero p.sub { color: var(--muted); }
+.hero p.lead { font-size: 19px; color: var(--ink); margin: 0 0 14px; }
+.hero p.sub { color: var(--ink); }
 
 .hero img {
   width: 100%;
@@ -97,16 +96,23 @@ body {
 }
 
 .section-title {
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.24em;
-  color: var(--heading-2);
+  color: var(--heading);
   border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
   margin: 56px 0 28px;
 }
+
+.cta-band {
+  background: var(--beige);
+  padding: 32px;
+  margin-top: 56px;
+}
+
+.cta-band .section-title { border-bottom: none; margin-top: 0; }
 
 .post-grid {
   list-style: none;
@@ -132,24 +138,23 @@ body {
 .card .card-body { padding: 16px 18px 20px; }
 
 .card h3 {
-  font-family: var(--serif);
   margin: 0 0 8px;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.35;
 }
 
 .card h3 a { color: var(--heading-2); text-decoration: none; }
 .card h3 a:hover { color: var(--accent); }
 
-.card p.excerpt { margin: 0 0 12px; color: var(--ink); font-size: 14px; }
+.card p.excerpt { margin: 0 0 12px; color: var(--ink); font-size: 15px; }
 
-.post-list h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 22px; }
+.post-list h3 { margin: 0 0 8px; font-size: 23px; }
 .post-list h3 a { color: var(--heading-2); text-decoration: none; }
 .post-list h3 a:hover { color: var(--accent); }
 .post-list p { margin: 0 0 8px; color: var(--ink); }
 
-.post-meta { font-size: 13px; color: var(--muted); }
-.heart { color: var(--accent); font-size: 13px; }
+.post-meta { font-size: 14px; color: var(--ink); }
+.heart { color: var(--accent); font-size: 14px; }
 
 .btn {
   display: inline-block;
@@ -160,44 +165,42 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid var(--btn-bg);
 }
 
 .btn:hover { background: var(--heading-2); border-color: var(--heading-2); }
 
 article.post h1 {
-  font-family: var(--serif);
-  font-size: 34px;
+  font-size: 36px;
   line-height: 1.25;
   color: var(--heading);
   margin: 0 0 8px;
 }
-article.post h2 { font-family: var(--serif); color: var(--heading); margin-top: 36px; }
-article.post h3 { font-family: var(--serif); color: var(--heading-2); margin-top: 28px; }
+article.post h2 { color: var(--heading); margin-top: 36px; }
+article.post h3 { color: var(--heading-2); margin-top: 28px; }
 article.post a { color: var(--heading-2); }
 article.post img { max-width: 100%; height: auto; }
-article.post table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+article.post table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 15px; }
 article.post th, article.post td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
-article.post th { background: #faf7f5; }
+article.post th { background: var(--blue); }
 
-.byline { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+.byline { color: var(--ink); font-size: 15px; margin-bottom: 28px; }
 
-.back-link { display: inline-block; margin-top: 40px; color: var(--heading-2); text-decoration: none; font-size: 14px; }
+.back-link { display: inline-block; margin-top: 40px; color: var(--heading-2); text-decoration: none; font-size: 15px; }
 .back-link:hover { color: var(--accent); }
 
-.resume h1 { font-family: var(--serif); font-size: 32px; color: var(--heading); margin-bottom: 4px; }
-.resume .subtitle { color: var(--muted); margin-top: 0; }
-.resume h2.section-title { font-family: var(--sans); }
-.resume h3 { font-family: var(--serif); color: var(--heading); margin-bottom: 2px; }
-.resume h4 { margin: 4px 0 10px; color: var(--muted); font-weight: 500; }
+.resume h1 { font-size: 33px; color: var(--heading); margin-bottom: 4px; }
+.resume .subtitle { color: var(--ink); margin-top: 0; }
+.resume h3 { color: var(--heading); margin-bottom: 2px; }
+.resume h4 { margin: 4px 0 10px; color: var(--ink); font-weight: 500; }
 .resume .job { margin-bottom: 28px; }
-.resume .meta { color: var(--muted); font-size: 14px; }
+.resume .meta { color: var(--ink); font-size: 15px; }
 
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 24px;
   text-align: center;
-  color: var(--muted);
-  font-size: 13px;
+  color: var(--ink);
+  font-size: 14px;
 }
